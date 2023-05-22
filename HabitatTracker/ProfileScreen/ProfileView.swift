@@ -12,7 +12,7 @@ class ProfileView: UITableViewController, UIImagePickerControllerDelegate, UINav
     
     private let heightScreen = UIScreen.main.bounds.height
     private let presenter: ProfilePresenter
-
+    
     //Delegates
     private weak var passInfoToProfileCell: PassInfoToAny?
     private weak var passInfoToHeader: PassSettingsForHeaderProfile?
@@ -31,7 +31,7 @@ class ProfileView: UITableViewController, UIImagePickerControllerDelegate, UINav
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     //table view settings
     private func setupTableView() {
         tableView.separatorStyle = .none
@@ -40,36 +40,36 @@ class ProfileView: UITableViewController, UIImagePickerControllerDelegate, UINav
         tableView.register(ProfileCell.self, forCellReuseIdentifier: ProfileCell.reuseId)
         tableView.register(ProfileHeader.self, forHeaderFooterViewReuseIdentifier: ProfileHeader.reuseId)
     }
-
+    
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ProfileCell.reuseId, for: indexPath) as? ProfileCell else { return UITableViewCell()}
-            cell.backgroundColor = UIColor(named: "backgroundColor")
-            passInfoToProfileCell = cell
-            switch indexPath.row {
-            case 0:
-                let text = NSLocalizedString("Log out", comment: "log out row")
-                let image = UIImage(systemName: "rectangle.portrait.and.arrow.forward")
-                self.passInfoToProfileCell?.passInfo(info: (text, image))
-                return cell
-            default:
-                return cell
-            }
+        cell.backgroundColor = .myBackgorundColor
+        passInfoToProfileCell = cell
+        switch indexPath.row {
+        case 0:
+            let text = NSLocalizedString("Log out", comment: "log out row")
+            let image = UIImage(systemName: "rectangle.portrait.and.arrow.forward")
+            self.passInfoToProfileCell?.passInfo(info: (text, image))
+            return cell
+        default:
+            return cell
+        }
         
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         heightScreen * 0.08
     }
-
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         switch indexPath.row {
@@ -94,7 +94,7 @@ class ProfileView: UITableViewController, UIImagePickerControllerDelegate, UINav
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         heightScreen * 0.27
     }
-
+    
     //MARK: Image picker
     func imagePicker(sourceType: UIImagePickerController.SourceType) -> UIImagePickerController {
         let imagePickerController = UIImagePickerController()

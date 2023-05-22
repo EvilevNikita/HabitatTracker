@@ -34,7 +34,7 @@ class TabBarController: UITabBarController {
         controllers.append(basketViewController)
         
         let profileTitle = NSLocalizedString("Profile", comment: "profile tab bar")
-        let profileViewController =  UIViewController() 
+        let profileViewController = ProfileView(presenter: ProfilePresenter())
         profileViewController.tabBarItem = UITabBarItem(title: profileTitle, image: UIImage(systemName: "person"), selectedImage: UIImage(systemName: "person.fill"))
         controllers.append(profileViewController)
         
