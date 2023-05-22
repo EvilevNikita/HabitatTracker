@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		6402357D2A17813A00EF62AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402357C2A17813A00EF62AB /* AppDelegate.swift */; };
 		6402357F2A17813A00EF62AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402357E2A17813A00EF62AB /* SceneDelegate.swift */; };
-		640235812A17813A00EF62AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640235802A17813A00EF62AB /* ViewController.swift */; };
-		640235842A17813A00EF62AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640235822A17813A00EF62AB /* Main.storyboard */; };
 		640235862A17813B00EF62AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640235852A17813B00EF62AB /* Assets.xcassets */; };
 		640235892A17813B00EF62AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640235872A17813B00EF62AB /* LaunchScreen.storyboard */; };
 		A1B919B3E3C77C1C5ADB6642 /* Pods_HabitatTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DC009EA12D17DACAC3B685 /* Pods_HabitatTracker.framework */; };
@@ -20,8 +18,6 @@
 		640235792A17813A00EF62AB /* HabitatTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitatTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6402357C2A17813A00EF62AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6402357E2A17813A00EF62AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		640235802A17813A00EF62AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		640235832A17813A00EF62AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		640235852A17813B00EF62AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		640235882A17813B00EF62AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6402358A2A17813B00EF62AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,8 +61,6 @@
 			children = (
 				6402357C2A17813A00EF62AB /* AppDelegate.swift */,
 				6402357E2A17813A00EF62AB /* SceneDelegate.swift */,
-				640235802A17813A00EF62AB /* ViewController.swift */,
-				640235822A17813A00EF62AB /* Main.storyboard */,
 				640235852A17813B00EF62AB /* Assets.xcassets */,
 				640235872A17813B00EF62AB /* LaunchScreen.storyboard */,
 				6402358A2A17813B00EF62AB /* Info.plist */,
@@ -80,7 +74,6 @@
 				805B201B207F320CA3309736 /* Pods-HabitatTracker.debug.xcconfig */,
 				73F3C620A6ED573830AE22BC /* Pods-HabitatTracker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,7 +147,6 @@
 			files = (
 				640235892A17813B00EF62AB /* LaunchScreen.storyboard in Resources */,
 				640235862A17813B00EF62AB /* Assets.xcassets in Resources */,
-				640235842A17813A00EF62AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +199,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				640235812A17813A00EF62AB /* ViewController.swift in Sources */,
 				6402357D2A17813A00EF62AB /* AppDelegate.swift in Sources */,
 				6402357F2A17813A00EF62AB /* SceneDelegate.swift in Sources */,
 			);
@@ -216,14 +207,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		640235822A17813A00EF62AB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				640235832A17813A00EF62AB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		640235872A17813B00EF62AB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,7 +345,7 @@
 				INFOPLIST_FILE = HabitatTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -391,7 +374,7 @@
 				INFOPLIST_FILE = HabitatTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
