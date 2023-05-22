@@ -20,4 +20,4 @@ protocol PassSettingsForHeaderProfile: AnyObject {
     func headerSettings(user: User)
 }
 
-
+protocol ProfileProtocol: AnyObject {}
