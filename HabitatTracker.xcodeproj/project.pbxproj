@@ -116,15 +116,6 @@
 			path = ProfileScreen;
 			sourceTree = "<group>";
 		};
-		5E5714392A1BCCD8002F3FB2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				5E57143A2A1BCCE1002F3FB2 /* User.swift */,
-				5E57143C2A1BCCFF002F3FB2 /* Theme.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		640235702A17813A00EF62AB = {
 			isa = PBXGroup;
 			children = (
@@ -152,12 +143,9 @@
 				6485C7D22A18CFE700B4BF03 /* View */,
 				6402357C2A17813A00EF62AB /* AppDelegate.swift */,
 				6402357E2A17813A00EF62AB /* SceneDelegate.swift */,
-
-				5E5714392A1BCCD8002F3FB2 /* Model */,
 				5E57142B2A1BC74B002F3FB2 /* Helper */,
 				5E57142E2A1BCA81002F3FB2 /* ProfileScreen */,
 				5E5714282A1BC6EE002F3FB2 /* TabBar */,
-
 				640235852A17813B00EF62AB /* Assets.xcassets */,
 				640235872A17813B00EF62AB /* LaunchScreen.storyboard */,
 				6402358A2A17813B00EF62AB /* Info.plist */,
@@ -190,6 +178,8 @@
 		6485C7D32A18D06E00B4BF03 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5E57143A2A1BCCE1002F3FB2 /* User.swift */,
+				5E57143C2A1BCCFF002F3FB2 /* Theme.swift */,
 				6485C7D92A18F81F00B4BF03 /* Habit.swift */,
 				6485C7E62A1A1FCE00B4BF03 /* HabitManager.swift */,
 				6485C7DB2A18FB8E00B4BF03 /* User.swift */,
@@ -522,7 +512,6 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
-
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

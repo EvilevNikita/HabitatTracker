@@ -24,7 +24,7 @@ class TabBarController: UITabBarController {
         var controllers: [UIViewController] = []
         
         let habitTitle = NSLocalizedString("Habits", comment: "habits tab bar")
-        let mainViewController = UIViewController() // add controller
+        let mainViewController = MainViewController()
         mainViewController.tabBarItem = UITabBarItem(title: habitTitle, image: UIImage(systemName: "checklist"), selectedImage: UIImage(systemName: "checklist.checked"))
         controllers.append(mainViewController)
         
