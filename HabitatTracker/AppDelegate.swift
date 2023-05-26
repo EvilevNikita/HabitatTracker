@@ -14,6 +14,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+
+      // Calculate the time until 24:00
+          let currentCalendar = Calendar.current
+          let now = Date()
+          let tomorrow = currentCalendar.date(byAdding: .day, value: 1, to: now)!
+          let midnightTomorrow = currentCalendar.startOfDay(for: tomorrow)
+          let timeUntilMidnight = midnightTomorrow.timeIntervalSince(now)
+
+          // Schedule timer to fire at midnight (taking into account time until midnight)
+          Timer.scheduledTimer(withTimeInterval: timeUntilMidnight, repeats: true) { (timer) in
+              HabitManager.shared.resetDailyProgress()
+          }
+      
     return true
   }
 
